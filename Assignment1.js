@@ -36,6 +36,19 @@ else if(persentage >=60 && persentage <= 69){
 
 
 
+// To print Table according to the user's wish if non so print Table of 5 ( it also asks to user the stating & Ending point )
+let Table=prompt("Enter your Table ");
+let stating=prompt("Enter your Starting point of Table ");
+let ending=prompt("Enter your Ending point of Table ");
 
-
+if(Table == ""){
+    for(i=1; i<=10; i++){
+        console.log("5" , "*" , i , "=" , i*5)
+    }
+}
+else{
+    for(i=stating; i<=ending; i++)
+    console.log(Table , "*" , i , "=" , Table*i)
+    console.log("Hamid Miya")
+}
 
