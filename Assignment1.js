@@ -122,3 +122,17 @@ let matrix = [
     }
     }
     console.log(matrix)
+
+
+// To check the days remaining in birthday ...
+let dob = prompt("Enter your Date of Birth (YYYY-MM-DD):");
+let dobMoment = moment(dob, "YYYY-MM-DD");
+let todaydate = moment();
+let doy = moment(dob).year(todaydate.year());
+
+if (doy.isBefore(todaydate)) {
+    doy.add(1, 'year');
+}
+
+let diff = doy.diff(todaydate, 'days');
+console.log("Days remaining for your birthday:", diff);
