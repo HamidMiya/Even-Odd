@@ -136,3 +136,24 @@ if (doy.isBefore(todaydate)) {
 
 let diff = doy.diff(todaydate, 'days');
 console.log("Days remaining for your birthday:", diff);
+
+
+
+
+
+
+
+// Function to calculate the average of an array
+function calculateAverage(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    let average = sum / arr.length;
+    return average;
+}
+
+const numbers = [10, 20, 30, 40, 50];
+
+const average = calculateAverage(numbers);
+console.log("Average is:", average);
