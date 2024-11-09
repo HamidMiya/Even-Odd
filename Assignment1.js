@@ -157,3 +157,24 @@ const numbers = [10, 20, 30, 40, 50];
 
 const average = calculateAverage(numbers);
 console.log("Average is:", average);
+
+
+
+// // Function to calculate the average of an array / The same work as above one .
+
+let a = prompt("Enter any Number like ARRAY Ex: 2,2,2");
+let array = a.split(',').map(Number);  // Convert input string to an array of numbers
+
+function Average(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {  // Declare loop index with 'let'
+        sum += arr[i];  // Calculate the sum of the array elements
+    }
+    let average = sum / arr.length;  // Calculate the average
+    return average;  // Return the average
+}
+
+const result = Average(array);  // Call the function with the array as an argument
+console.log("The average is:", result);  // Print the result
+
+
